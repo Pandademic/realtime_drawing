@@ -19,7 +19,7 @@ function draw(){
 function modelLoaded(){
     console.log('POSENET HAS ARRIVED!');
 }
-function gotPoses(){
+function gotPoses(results){
     if(results.length>0){
         console.log(results);
         noseX=results[0].pose.nose.x;
